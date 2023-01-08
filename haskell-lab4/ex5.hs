@@ -1,4 +1,5 @@
-newtype MyInt = MkMyInt Int
+data MyInt = MkMyInt Int
+--newtype MyInt = MkMyInt Int
 
 instance Eq MyInt where
     (==) (MkMyInt i1) (MkMyInt i2) = i1 == i2
@@ -19,6 +20,9 @@ instance Show MyInt where
     show (MkMyInt i) = "MkMyInt " ++ show i
 
 
+-- zad. 2
+--instance Eq a => Eq (BinTree a) where
+--    (==) (BinTree b1) (Bintree b2) = (
 
 
 
