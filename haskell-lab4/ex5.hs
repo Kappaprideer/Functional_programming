@@ -39,7 +39,7 @@ toList (Node left x right) = toList left ++ [x] ++ toList right
 newtype Box a = MkBox {valueInside :: a}
 
 instance Show a => Show (Box a) where
-    show (MkBox v) = "Box with " ++ show v
+    show (MkBox {valueInside = v}) = "Box with " ++ show v
     
 ---------------------------------------------
 
