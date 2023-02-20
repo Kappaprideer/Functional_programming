@@ -20,14 +20,6 @@ instance Show MyInt where
     show (MkMyInt i) = "MkMyInt " ++ show i
 
 
--- zad. 2
---instance Eq a => Eq (BinTree a) where
---    (==) (BinTree b1) (Bintree b2) = (
-
-
-
-
--- kartkówka
 
 data Tree a = Node (Tree a) a (Tree a) | Leaf a
 toList :: Tree a -> [a]

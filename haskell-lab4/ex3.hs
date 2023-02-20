@@ -74,9 +74,3 @@ occurs _ EmptyBT = 0
 occurs x (NodeBT node lt rt)
     | x == node = 1 + (occurs x lt) + (occurs x rt)
     | otherwise = (occurs x lt) + (occurs x rt)
-    
-
--- zad. 6
-
-
-

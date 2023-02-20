@@ -12,4 +12,3 @@ funcFactory n = case n of
 -- expApproxUpTo :: Int -> Double -> Double
 -- expApproxUpTo n x = sum[(x^k)/ fromIntegral (prod [1..k]) | k <- [0..n]]
 
-
